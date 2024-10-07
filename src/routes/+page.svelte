@@ -88,7 +88,7 @@
 		{#each slides as slide}
 			<Carousel.Item>
 				{#if slide.component}
-					<svelte:component this={slide.component} />
+					<svelte:component this={slide.component} data={data} />
 				{:else}
 					<h1 class="text-4xl text-white">{slide.title}</h1>
 				{/if}

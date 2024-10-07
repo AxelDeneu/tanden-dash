@@ -1,0 +1,16 @@
+
+
+.fc .fc-daygrid-day-top {
+    flex-direction: row;
+}
+
+.fc-theme-standard th {
+    @apply mb-2 text-right text-sm text-muted-foreground pr-2 border-none;
+}
+
+.fc-theme-standard td {
+    @apply border-none border-0 text-sm text-muted-foreground overflow-auto ring-1 ring-border;
+}
+.fc-daygrid-day-frame {
+    @apply p-2 text-muted-foreground;
+}

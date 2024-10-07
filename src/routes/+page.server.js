@@ -1,10 +1,13 @@
 // src/routes/+page.server.ts
 import prisma from '$lib/prisma';
+import { parseCalendarEvents } from '$lib/utils/calendar';
 
 export const load = (async () => {
 	const response = await prisma.note.findMany()
 
-	return { notes: response };
+	const events = await parseCalendarEvents();
+
+	return { notes: response, events };
 });
 
 export const actions = {
