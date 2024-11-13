@@ -1,11 +1,7 @@
 <script>
-	import Date from '$lib/components/elements/date.svelte';
-	import Weather from '$lib/components/elements/weather.svelte';
+	import Calendar from '$lib/components/elements/calendar.svelte';
 </script>
 
-<div class="flex items-center justify-between p-14">
-	<div>
-	</div>
-	<div>
-	</div>
+<div class="flex flex-col items-stretch justify-center p-14 w-full">
+	<Calendar/>
 </div>

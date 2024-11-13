@@ -26,10 +26,12 @@
 
 	$: if ($notes) {
 		filteredNotes = $notes.filter((note) => note.page === page);
+
+		console.log("Notes for page " + page, filteredNotes);
 	}
 </script>
 
-<div class="fixed left-0 top-0 pointer-events-none w-screen h-screen opacity-0 transition-all" bind:this={notesRef}>
+<div class="absolute left-0 top-0 pointer-events-none w-full h-full opacity-0 transition-all" bind:this={notesRef}>
 	{#each filteredNotes as note}
 		{#key note.id}
 			<Note {note} />

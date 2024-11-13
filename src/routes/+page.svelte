@@ -86,7 +86,7 @@
 >
 	<Carousel.Content class="min-h-screen">
 		{#each slides as slide}
-			<Carousel.Item>
+			<Carousel.Item class="relative" id={"page-" + slide.slug}>
 				{#if slide.component}
 					<svelte:component this={slide.component} />
 				{:else}

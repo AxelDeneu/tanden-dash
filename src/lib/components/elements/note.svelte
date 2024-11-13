@@ -24,6 +24,8 @@
 
 				gsap.registerPlugin(Draggable);
 
+				console.log(note)
+
 				gsap.set(noteRef, {
 					x: note.x ?? 200,
 					y: note.y ?? 200,
@@ -32,7 +34,7 @@
 				draggableInstance = Draggable.create(noteRef, {
 					type: "x,y",
 					inertia: true,
-					bounds: "body",
+					bounds: "#page-" + note.page,
 					onPress: () => {
 						gsap.to(noteRef, { scale: 1.1, duration: 0.2 });
 

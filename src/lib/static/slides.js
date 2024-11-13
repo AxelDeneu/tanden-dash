@@ -3,14 +3,14 @@ import Calendar from '$lib/components/pages/calendar.svelte';
 
 const slides = [
 	{
-		"slug": "home",
-		"title": "Accueil",
-		"component": Home
-	},
-	{
 		"slug": "calendar",
 		"title": "Calendrier",
 		"component": Calendar
+	},
+	{
+		"slug": "home",
+		"title": "Accueil",
+		"component": Home
 	}
 ];
 
